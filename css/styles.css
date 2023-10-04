@@ -1,0 +1,423 @@
+@import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: "Pretendard","Pretendard Variable";
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+img {
+	vertical-align: middle;
+	border: none;
+}
+
+body {
+	color: #333;
+	background-color: #fff;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* 스크롤바 설정 */
+body::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+} 
+
+::-webkit-scrollbar-button {
+	width: 0;
+	height: 0;
+}
+
+/* 스크롤바 막대 설전 */
+body::-webkit-scrollbar-button {
+    background-color: #bfc6d2;
+	/* 스크롤바 둥글게 설정*/
+    border-radius: 4px;
+}
+
+table {
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+.inner{
+	width: 1600px;
+	margin: 0 auto;
+}
+
+.clearfix::after,
+.clearfix::before {
+	display: block;
+	clear: both;
+	content: "";
+}
+
+/* header */
+.sec_ad{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 42px;
+	width: 100%;
+	background: rgb(0, 116, 255);
+}
+
+.sec_header{
+	width: 100%;
+  box-shadow: 0 10px 10px -5px;
+	color: #000;
+}
+
+.header_bottom{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header_bottom ul li a{color: #fff;}
+
+
+.popup-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* 왼쪽하나 */
+.sec_header ul{
+  display: flex;
+  padding: 25px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.sec_header ul li{
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.sec_header ul li a{
+  color: #000;
+  position: relative;
+  font-size: 1.2rem;  
+}
+
+.sec_header ul li:hover{
+	transform: translateY(-5px);
+}
+
+/* 오른쪽하나 */
+.sec_header .search-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.search-wrap {
+  position: relative;
+}
+
+.search-wrap svg {
+  position: absolute;
+  top: 30px;
+  left: 15px;
+}
+
+.search-wrap .login {
+  margin: 30px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.search-wrap .login:hover {
+  color: rgb(0, 116, 255);
+}
+
+.search-wrap .join {
+  width: 95px;
+  height: 50px;
+  background-color: rgb(44, 48, 48);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.banner {
+  width: 100%;
+  height: 500px;
+  background-color: rgb(250, 252, 252);
+  display: flex;
+  justify-content: center;
+}
+
+.banner-top {
+  text-align: center;
+}
+
+.banner .subject {
+  padding: 100px;
+  font-size: 50px;
+  color: #0D0C26;
+}
+
+.banner-box{
+	display: flex;
+	justify-content: center;
+}
+
+.banner-box p .subfind {
+  width: 200px;
+  height: 60px;
+  background: linear-gradient(148deg,#6737ff,#2841fe);
+  border-radius: 50px;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(4px);
+  }
+}
+
+.banner-box a > i {
+  margin-left: 5px;
+  animation: move .5s linear alternate infinite;
+}
+
+.search-wrap input{
+  background-color: rgb(247, 249, 249);
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 50px;
+  padding: 12px 16px 12px 40px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.search-wrap svg {
+  width: 20px;
+}
+
+.banner-top .sub-text {
+  margin: 100px;
+  color: rgb(0, 116, 255);
+}
+
+.contents {
+  width: 100%;
+  padding: 60px 0;
+  background-color: #f4f4f4;
+}
+
+.share .share-text {
+  color: #383838;
+  font-size: 35px;
+  font-weight: 600;
+  padding: 0 0 60px 16px;
+}
+
+/* card */
+.card-container{
+	justify-content: space-between;
+	flex-wrap: wrap;
+	display: flex;
+}
+
+.card{
+	width: 18%;
+	background: #fff;
+	border-radius: 4px;
+	padding: 20px 0;
+	margin: 16px;
+	box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 16px 0px;
+  transition: transform 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 4px 16px 0px;
+}
+
+.card .card-header{
+	font-size: 22px;
+	font-weight: bold;
+	padding: 15px;
+}
+
+.card .card-body{
+  padding: 0 15px;
+  font-size: 16px;
+  height: 170px;
+	/* 중요한 것 */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+}
+
+.card .card-footer{
+	display: flex;
+	margin-top: 15px;
+	justify-content: space-between;
+	padding: 5px 15px;
+}
+
+.card .card-footer figure:nth-child(1){
+	display: flex;
+	align-items: center;
+}
+
+.card .card-footer figure:nth-child(1) img{
+	margin-right: 7px;
+	border-radius: 100px;
+	width: 35px;
+	height: 35px;
+}
+
+.card .card-footer figure:nth-child(2){
+	display: flex;
+	align-items: center;
+	color: rgb(124 132 132);
+}
+
+.card .card-footer figure:nth-child(2) i{
+	margin-right: 5px;
+}
+
+.card .card-footer figure:nth-child(2) i:last-child{
+	margin-right: 0;
+}
+
+/* faq-container */
+
+.faq-container {
+	padding: 70px 10px;
+	width: 100%;
+}
+
+.faq-container .faq-text {
+	font-size: 50px;
+}
+
+.faq-container .faq {
+	margin-top: 30px;
+	width: 100%;
+	border-top: 2px solid #000;
+}
+
+.faq-list {
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-list dt,
+.faq-list dd {
+    border-top: 1px solid #ddd;
+    padding: 20px;
+    position: relative;
+	font-size: 20px;
+}
+.faq-list dt:first-child {
+    border-top: 0;
+}
+.faq-list dt {
+    cursor: pointer;
+    padding-right: 50px;
+}
+.faq-list dt:before {
+    width: 35px;
+    content: "Q.";
+    display: inline-block;
+    padding-right: 20px;
+}
+.faq-list dt:after {
+    content: "+";
+    display: inline-block;
+    position: absolute;
+    width: 15px;
+    text-align: center;
+    right: 30px;
+    top: 23px;
+}
+.faq-list dd {
+    display: none;
+    color: #777;
+}
+.faq-list dt.selected {
+    color: rgb(0, 116, 255);
+}
+.faq-list dt.selected:before {
+    color: rgb(0, 116, 255);
+}
+.faq-list dt.selected:after {
+    content: "-";
+}
+.faq-list dd:before {
+    width: 35px;
+    content: "A.";
+    display: inline-block;
+    padding-right: 20px;
+}
+.faq-list dd {
+    background: #f8f7f2;
+}
+
+/* sce_footer */
+
+.sce_footer {
+	width: 100%;
+	height: 200px;
+	background-color: rgb(255, 255, 255);
+    border-top: 1px solid rgb(229, 229, 229);
+}
+
+.footer-top ul {
+	display: flex;
+	padding: 50px;
+	justify-content: center;
+}
+
+.footer-top ul > li {
+	display: flex;
+	float: left;
+	margin-left: 20px;
+}
+
+.footer-top ul > li:first-child::before{
+	display: none;
+}
+
+.footer-top ul > li::before {
+	content: "|";
+	color: #ccc;
+	padding-right: 20px;
+	font-weight: 100;
+}
+
+.footer-bottom {
+	text-align: center;
+}
