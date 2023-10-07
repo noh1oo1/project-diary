@@ -67,16 +67,33 @@
         <div class="contents">
 			<div class="inner">
 				<div class="share">
-					<p class="share-text">오늘의 일기를 구경하기</p>
+					<p class="share-text">오늘의 일기를 구경하기
+						<div class="select-top" onclick="fn_drapDown()">
+							<p>오늘</p>
+							<i class="fa-sharp fa-solid fa-triangle fa-rotate-180"></i>
+							<ul class="select">
+								<li class="today">오늘</li>
+								<li class="week">이번 주</li>
+								<li class="month">이번 달</li>
+							</ul>
+						</div>
+							
+					</p>
 					<!-- 카드 컨테이너(컨테이너뜻은 뭔가를 담는다 카드주머니)  -->
 					<div class="card-container">
 						<div class="card">
-							<div class="card-header">
-								뭐든지 처음은 어렵다
-							</div>
+							<img src="/img/cloud.jpg" alt="">
+								<div class="card-header">
+									뭐든지 처음은 어렵다
+								</div>
 							<div class="card-body">
 								나는 어제 너무 떨리는 탓에 잠은 잘 못 잤지만, 평소보다 일찍 일어나서 여유롭게 준비했다. 회사에 일찍
 								도착해서 인사팀 담당자와 함께 이야기를 나누면서 회사 소개에 대해 설명을 들었다.
+							</div>
+							<div class="card-info">
+								<span>어제</span>
+								<span>·</span>
+								<span>3개의 댓글</span>
 							</div>
 							<div class="card-footer">
 								<figure>
@@ -84,19 +101,24 @@
 									<figcaption>노사랑</figcaption>
 								</figure>
 								<figure>
-									<i class="fa-solid fa-eye"></i>
-									<i class="fa-sharp fa-solid fa-heart"></i>
+									<i class="fa-solid fa-eye"><span>420</span></i>
+									<i class="fa-sharp fa-solid fa-heart"><span>420</span></i>
 								</figure>
 							</div>
 						</div>
 						<div class="card">
+							<img src="/img/cloud.jpg" alt="">
 							<div class="card-header">
 								속기사 관찰하기
 							</div>
 							<div class="card-body">
 								첫날에 첫 수업이라 떨리면서도 설레는 마음으로 센터로 향했다. 교실에 도착한 뒤 맨 앞자리에 앉아서 메고
-								있던 가방에서 공책과 필기도구를 꺼냈다. 시계를 확인해 보니 아직 시간이 남아 있었다.
-								<br>‘아. 속기사님께서 오셨나 보다.’
+								있던 가방에서 공책과 필기도구를 꺼냈다.
+							</div>
+							<div class="card-info">
+								<span>약 11시간 전</span>
+								<span>·</span>
+								<span>2개의 댓글</span>
 							</div>
 							<div class="card-footer">
 								<figure>
@@ -110,12 +132,18 @@
 							</div>
 						</div>
 						<div class="card">
+							<img src="/img/cloud.jpg" alt="">
 							<div class="card-header">
 								맨날 배고프고 잠이 온다
 							</div>
 							<div class="card-body">
 								많이많이 자도 왜 졸리는 걸까? 또 다이어트하고 싶은데 맨날 배고파서 참을 수가 없어. 날씬한 사람들이
 								정말 대단하다. 노력한 결과로 날씬하지만, 나는 그렇지 않다. 오늘은 마라탕을 먹고 내일부터 다이어트할 거다.
+							</div>
+							<div class="card-info">
+								<span>약 6시간 전</span>
+								<span>·</span>
+								<span>1개의 댓글</span>
 							</div>
 							<div class="card-footer">
 								<figure>
@@ -129,11 +157,17 @@
 							</div>
 						</div>
 						<div class="card">
+							<img src="/img/cloud.jpg" alt="">
 							<div class="card-header">
 								다가오는 추석이 늘 설레
 							</div>
 							<div class="card-body">
 								추석이 되면 집에 푸욱 쉬고 공부하고 놀고 맛있는 거 많이 먹어야지. 가족들을 보고 너무 좋다. 고향에 내려가는 게 얼마나 오랜만인지.추석이 되면 집에 푸욱 쉬고 공부하고 놀고 맛있는 거 많이 먹어야지. 가족들을 보고 너무 좋다. 고향에 내려가는 게 얼마나 오랜만인지.추석이 되면 집에 푸욱 쉬고 공부하고 놀고 맛있는 거 많이 먹어야지. 가족들을 보고 너무 좋다. 고향에 내려가는 게 얼마나 오랜만인지.추석이 되면 집에 푸욱 쉬고 공부하고 놀고 맛있는 거 많이 먹어야지. 가족들을 보고 너무 좋다. 고향에 내려가는 게 얼마나 오랜만인지.추석이 되면 집에 푸욱 쉬고 공부하고 놀고 맛있는 거 많이 먹어야지. 가족들을 보고 너무 좋다. 고향에 내려가는 게 얼마나 오랜만인지.추석이 되면 집에 푸욱 쉬고 공부하고 놀고 맛있는 거 많이 먹어야지. 가족들을 보고 너무 좋다. 고향에 내려가는 게 얼마나 오랜만인지.추석이 되면 집에 푸욱 쉬고 공부하고 놀고 맛있는 거 많이 먹어야지. 가족들을 보고 너무 좋다. 고향에 내려가는 게 얼마나 오랜만인지.
+							</div>
+							<div class="card-info">
+								<span>어제</span>
+								<span>·</span>
+								<span>1개의 댓글</span>
 							</div>
 							<div class="card-footer">
 								<figure>
@@ -147,15 +181,21 @@
 							</div>
 						</div>
 						<div class="card">
+							<img src="/img/cloud.jpg" alt="">
 							<div class="card-header">
 								프로젝트는 무서워
 							</div>
 							<div class="card-body">
 								어려운 프로젝트를 시킬까봐 너무 무섭고 어렵다. 나는 잘할 수 있을까? 공부해도 너무너무 부족해. 몸이 열개라도 있으면 좋겠다.
 							</div>
+							<div class="card-info">
+								<span>약 15시간 전</span>
+								<span>·</span>
+								<span>1개의 댓글</span>
+							</div>
 							<div class="card-footer">
 								<figure>
-									<img src="/img/5.jpg" alt="말티즈" class="profile-img">
+									<img src="/img/KakaoTalk_20221116_001039353_24.jpg" alt="말티즈" class="profile-img">
 									<figcaption>카페탐방</figcaption>
 								</figure>
 								<figure>
@@ -201,24 +241,6 @@
 			</div>
 		</footer>
     </div>
-
-<script>
-$('.faq-list dt').click(function() {
-
-	if($(this).hasClass('selected')){
-		$(this).removeClass('selected');
-		$(this).next('dd').stop().slideUp(250);	
-		return;
-	}
-
-	$(this).toggleClass('selected');
-	$(this).next('dd').stop().slideDown(250);
-
-
-
-
-});
-
-</script>
+<script src="/js/index.js"></script>
 </body>
 </html>
