@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>로그인｜오늘의 일기 </title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;800;900&family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="login">
+				<div class="login_head">
+					<h1 class="login_logo"><img src="/img/오늘의-기록-logo.png" alt="오늘의 기록 로고"></h1>
+				</div>
+				<div class="login_body">
+					<div class="login_info">
+						<form method="post" action="" id="form_login">
+							<dlv class="form_group">
+								<label for="user_email">이메일</label>
+								<input type="text" name="user_email"/>
+							</dlv>
+							<dlv class="form_group">
+								<label for="user_pw">비밀번호</label>
+								<input type="password" name="user_pw"/>
+								<i class="fa-regular fa-eye-slash"></i>
+							</dlv>
+							<input type="submit" value="로그인" />
+						</form>	
+					</div>
+					<label for="remember-check">
+						<div class="checks etrans">
+							<input type="checkbox" id="check_btn"/>
+							<label for="check_btn">로그인 상태 유지</label>
+						</div>
+						<a href="#" class="find">이메일/비밀번호 찾기</a>
+					</label>		
+					<div class="login_sns">
+						<div class="login_sns_head">
+							SNS로 간편하게 시작하기
+						</div>
+						<ul class="login_sns_body">
+								<li class="Login-item">
+									<a class="kakao" href="#"></a>
+								</li>
+								<li class="Login-item">
+									<a class="google" href="#"></a>
+								</li>
+								<li class="Login-item">
+									<a class="naver" href="#"></a>
+								</li>
+							</ul>
+							<div class="login_sns_foot">
+								<p>아직 회원이 아니세요?</p>
+								<p>회원가입 하기</p>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+	</div>
+</body>
+</html>
+

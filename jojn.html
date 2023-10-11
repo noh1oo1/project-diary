@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>회원가입 - 오늘의 기록</title>
+	<link rel="stylesheet" href="/css/jojn.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="join">
+				<div class="join_head">
+					<h1 class="login_logo"><img src="/img/오늘의-기록-logo.png" alt="오늘의 기록 로고"></h1>
+				</div>
+				<div class="join_body">
+					<div class="join_info">
+						<form method="post" action="" id="form_join"></form>
+						<div class="form_group">
+							<label for="user_name">닉네임</label>
+								<input type="text" name="user_name"/>
+						</div>
+						<div class="form_group">
+							<label for="user_email">이메일</label>
+								<input type="text" name="user_email"/>
+						</div>
+						<dlv class="form_group">
+							<label for="user_pw">비밀번호</label>
+							<input type="password" name="user_pw"/>
+							<i class="fa-regular fa-eye-slash"></i>
+						</dlv>
+							<div class="checks etrans">
+								<input type="checkbox" id="check_btn"/>
+								<label for="check_btn" class="cb1">[필수] 만 14세 이상입니다</label>
+							</div>
+							<div class="checks etrans">
+								<input type="checkbox" id="check_btn"/>
+								<label for="check_btn" class="cb1">[선택] 마케팅 정보 수신</label>
+							</div>
+							<input type="submit" value="가입하기" class="button-5"/>
+					</div>
+				</div>
+</body>
+</html>
